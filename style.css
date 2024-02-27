@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+#container{
+    width:100%;
+    min-height:100vh;
+    background-image: url("image/1.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container form{
+    width:90%;
+    max-width:500px;
+    padding:50px 30px 20px;
+    background: rgba(255,255,255,.1);
+    backdrop-filter: blur(30px);
+    border:rgba(255,255,255,0.1);
+    border-radius:8px;
+  
+}
+.inputfield{
+    width:100%;
+    display:flex;
+    align-items: center;
+    margin: 10px 0;
+    position:relative;
+}
+.inputfield label{
+    flex-basis: 28%;
+}
+.inputfield input,.inputfield textarea{
+    flex-basis: 68%;
+    background:wheat;
+    border:none;
+    outline:none;
+    padding:8px 0;
+    border-bottom: 1px solid #999;
+    color:#333;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+form button{
+    background: #333;    
+    color: #fff;
+    border-radius: 4px;
+    border: ipx solid rgba(255,255,255,0.7);
+    padding:10px 30px;
+    outline: 0;
+    cursor:pointer;
+    display:block;
+    margin:30px ;
+    margin-left: 180px
+}
+.inputfield span{
+    position:absolute;
+    bottom:12px;
+    right:17px;
+    font-size: 12px;
+    color:red;
+}
+#submit-error{
+    color:red;
+}
+.inputfield span i{
+  color:seagreen;
+}
